@@ -1,9 +1,7 @@
 def prepare_str(string):
-    return string.replace(' ', '-').replace('!', '').replace('?', '').replace(',', '').replace('.', '').replace('/', '')
+    return string.replace(' ', '').replace('!', '').replace('?', '').replace(',', '').replace('.', '').replace('/',
+                                                                                                               '') + '.py'
 
-
-print(prepare_str('How good are you really?') + '.py')
-
-
-def two_sort_more(lst):
-    return '***'.join(min(lst))
+while True:
+    fileName = input('Enter file name: ')
+    open('8-kyu/' + prepare_str(fileName), 'w').close()
