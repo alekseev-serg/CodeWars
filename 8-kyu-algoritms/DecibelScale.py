@@ -12,6 +12,7 @@ Your task is to simply calculate the loudness of a sound wave, given its intensi
 
 Results are automatically rounded to the nearest integer by the test cases.
 """
+import math 
 
 def db_scale(intensity):
     """
